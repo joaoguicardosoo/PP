@@ -218,7 +218,7 @@ return 0;
 }
 */
 
-// Exercicio 20
+/* Exercicio 20
 int main (){
     float kg, libras;
     printf("Digite o valor de massa em kg: \n");
@@ -228,4 +228,76 @@ int main (){
 
 return 0;
 }
-//
+*/
+
+/* Exercicio 21
+int main (){
+    float libras, kg;
+    printf("Digite o valor de massa em libras: \n");
+    scanf("%f", &libras);
+    kg = libras*0.45;
+    printf("O valor de massa em kg eh: %.1f", kg);
+
+return 0;
+}
+*/
+
+/* Exercicio 22
+int main (){
+    float jardas, metros;
+    printf("Digite o valor de comprimento em jardas: \n");
+    scanf("%f", &jardas);
+    metros = 0.91*jardas;
+    printf("O valor de comprimento em metros eh: %.1f", metros);
+
+return 0;
+}
+*/
+
+/* Exercicio 23
+int main (){
+    float metros, jardas;
+    printf("Digite o valor de comprimento em metros: \n");
+    scanf("%f", &metros);
+    jardas = metros/0.91;
+    printf("O valor de comprimento em jardas eh: %.1f", jardas);
+
+return 0;
+}
+*/
+
+/* Exercicio 24
+int main (){
+    float metros, acres;
+    printf("Digite o valor de area em metros quadrados: \n");
+    scanf("%f", &metros);
+    acres = metros*0.000247;
+    printf("O valor de area em acres eh: %.6f", acres);
+
+return 0;
+}
+*/
+
+/* Exercicio 25
+int main (){
+    float acres, metros;
+    printf("Digite o valor de area em acres: \n");
+    scanf("%f", &acres);
+    metros = acres*4048.58;
+    printf("O valor de area em metros quadrados eh: %.4f", metros);
+
+return 0;
+}
+*/
+
+/* Exercicio 26
+int main (){
+    float metros, hectares;
+    printf("Digite o valor de area em metros quadrados: \n");
+    scanf("%f", &metros);
+    hectares = metros*0.0001;
+    printf("O valor de area em hectares eh: %.4f", hectares);
+
+return 0;
+}
+*/
