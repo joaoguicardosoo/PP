@@ -301,3 +301,39 @@ int main (){
 return 0;
 }
 */
+
+/* Exercicio 27
+int main (){
+    float hectares, metros;
+    printf("Digite o valor de area em hectares: \n");
+    scanf("%f", &hectares);
+    metros = hectares*10000;
+    printf("O valor de area em metros eh: %.1f", metros);
+    
+return 0;
+}
+*/
+
+/* Exercicio 28
+int main (){
+    int x,y,z,soma;
+    printf("Digite tres valores separados por espaco: \n");
+    scanf("%d %d %d", &x, &y, &z);
+    soma = x*x+y*y+z*z;
+    printf("O valor da soma dos quadrados dos valores eh: %d", soma);
+    
+return 0;
+}
+*/
+
+/* Exercicio 29
+int main (){
+    float a,b,c,d,media;
+    printf("Digite quatro notas separados por espaco: \n");
+    scanf("%f %f %f %f", &a, &b, &c, &d);
+    media = (a+b+c+d)/4;
+    printf("O valor da media das notas eh: %.2f", media);
+    
+return 0;
+}
+*/
