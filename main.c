@@ -337,3 +337,76 @@ int main (){
 return 0;
 }
 */
+
+/* Exercicio 30
+int main (){
+    float real, cotacaoUS, dolar;
+    printf("Digite um valor em R$: \n");
+    scanf("%f", &real);
+    printf("Digite a cotacao do dolar US$: \n");
+    scanf("%f", &cotacaoUS);
+    dolar = real/cotacaoUS;
+    printf("Seu valor em reais convertido em dolares eh: %.2fUSD", dolar);
+return 0;
+}
+*/
+
+/* Exercicio 31
+int main (){
+    int x, antecessor, sucessor;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &x);
+    antecessor = x-1;
+    sucessor = x+1;
+    printf("O numero antecessor dele eh: %d. \n", antecessor);
+    printf("O numero sucessor dele eh: %d.", sucessor);
+    
+return 0;
+}
+*/
+
+/* Exercicio 32
+int main (){
+    int x, antecessor, sucessor, total;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &x);
+    antecessor = 2*x-1;
+    sucessor = 3*x+1;
+    total = sucessor+antecessor;
+    printf("A soma do sucessor de seu triplo com o antecessor de seu dobro eh: %d. \n", total);
+    
+return 0;
+}
+*/
+
+/* Exercicio 33
+int main (){
+    int lado, area;
+    printf("Qual o tamanho do lado do quadrado? \n");
+    scanf("%d", &lado);
+    area = lado*lado;
+    printf("A área do quadrado eh: %d.", area);
+    return 0;
+}
+*/
+
+/* Exercicio 34
+int main (){
+    float raio, area;
+    printf("Qual o tamanho do raio do circulo? \n");
+    scanf("%f", &raio);
+    area = 3.141592*(raio*raio);
+    printf("A área do circulo eh: %.2f.", area);
+    return 0;
+}
+*/
+
+// Exercicio 35
+int main (){
+    int a,b,hipotenusa;
+    printf("Digite o valor dos catetos separados por espaco: \n");
+    scanf("%d %d", )
+    
+    
+return 0;
+}
