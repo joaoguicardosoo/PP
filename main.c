@@ -309,7 +309,7 @@ int main (){
     scanf("%f", &hectares);
     metros = hectares*10000;
     printf("O valor de area em metros eh: %.1f", metros);
-    
+
 return 0;
 }
 */
@@ -321,7 +321,7 @@ int main (){
     scanf("%d %d %d", &x, &y, &z);
     soma = x*x+y*y+z*z;
     printf("O valor da soma dos quadrados dos valores eh: %d", soma);
-    
+
 return 0;
 }
 */
@@ -333,7 +333,7 @@ int main (){
     scanf("%f %f %f %f", &a, &b, &c, &d);
     media = (a+b+c+d)/4;
     printf("O valor da media das notas eh: %.2f", media);
-    
+
 return 0;
 }
 */
@@ -360,7 +360,7 @@ int main (){
     sucessor = x+1;
     printf("O numero antecessor dele eh: %d. \n", antecessor);
     printf("O numero sucessor dele eh: %d.", sucessor);
-    
+
 return 0;
 }
 */
@@ -374,7 +374,7 @@ int main (){
     sucessor = 3*x+1;
     total = sucessor+antecessor;
     printf("A soma do sucessor de seu triplo com o antecessor de seu dobro eh: %d. \n", total);
-    
+
 return 0;
 }
 */
@@ -401,12 +401,83 @@ int main (){
 }
 */
 
-// Exercicio 35
+/* Exercicio 35
 int main (){
-    int a,b,hipotenusa;
+    int a,b;
+    int soma;
+    float hipotenusa;
     printf("Digite o valor dos catetos separados por espaco: \n");
-    scanf("%d %d", )
-    
-    
+    scanf("%d %d", &a, &b);
+
+    soma = (a*a)+(b*b);
+    hipotenusa = sqrt(soma);
+    printf("O valor da hipotenusa com base nos catetos eh: %.2f", hipotenusa);
+
+return 0;
+}
+*/
+
+/* Exercicio 36
+int main (){
+    float altura, raio, volume;
+    printf("Qual a altura e o raio, separados por espacos, do cilindro regular? \n");
+    scanf("%f %f", &altura, &raio);
+    volume = 3.141592*(raio*raio)*altura;
+    printf("O volume do cilindro circular eh: %.2f.", volume);
+
+return 0;
+
+}
+*/
+
+/* Exercicio 37
+int main (){
+    float valor, desconto;
+    printf("Insira o valor de um produto: \n");
+    scanf("%f", &valor);
+    volume = 3.141592*(raio*raio)*altura;
+    printf("O volume do cilindro circular eh: %.2f.", volume);
+
+return 0;
+
+}
+*/
+
+/* Exercicio 38
+int main (){
+    float salario, novo_salario;
+    printf("Insira o salario do funcionario: \n");
+    scanf("%f", &salario);
+    novo_salario= salario*1.25;
+    printf("O novo salario com aumento de 25 porcento eh: %f.", novo_salario);
+
+return 0;
+}
+*/
+
+/* Exercicio 39
+int main(){
+    float quantiatotal, primeiro, segundo, terceiro;
+    quantiatotal = 780,000.00;
+    primeiro = quantiatotal*0.46;
+    segundo = quantiatotal*0.32;
+    terceiro = quantiatotal-primeiro-segundo;
+
+    printf("Jogador 1: R$ %.3Lf \n", primeiro);
+    printf("Jogador 2: R$ %.3Lf \n", segundo);
+    printf("Jogador 3: R$ %.3Lf \n", terceiro);
+return 0;
+}
+*/
+
+// Exercicio 40
+int main (){
+    float valordia, dias, totalpago;
+    printf("Quantos dias o encanador trabalhou? \n");
+    scanf("%f", &dias);
+    valordia = 30;
+    totalpago = (valordia*dias)*0.92;
+    printf("A quantia liquida a ser paga eh: %f", &totalpago);
+
 return 0;
 }
