@@ -1,3 +1,3 @@
 # PP
 
-Exercícios da discpilina de Programação Procedimental.
+Exercícios da disciplina de Programação Procedimental.
