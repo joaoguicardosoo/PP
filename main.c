@@ -470,14 +470,61 @@ return 0;
 }
 */
 
-// Exercicio 40
+/* Exercicio 40
 int main (){
     float valordia, dias, totalpago;
     printf("Quantos dias o encanador trabalhou? \n");
     scanf("%f", &dias);
     valordia = 30;
     totalpago = (valordia*dias)*0.92;
-    printf("A quantia liquida a ser paga eh: %f", &totalpago);
+    printf("A quantia liquida a ser paga eh: R$ %f", totalpago);
 
 return 0;
 }
+*/
+
+/* Exercicio 41
+int main (){
+    float valorhora, hora, totalpago;
+    printf("Qual o valor da hora de trabalho e o numero de horas trabalhadas por espaco: \n");
+    scanf("%f %f", &valorhora, &hora);
+    totalpago = (valorhora*hora)*1.1;
+    printf("O valor a ser pago ao funcionario eh: R$ %.2f", totalpago);
+
+return 0;
+}
+*/
+
+/* Exercicio 42
+int main (){
+    float salariobase, salariogratificacao, salarioareceber;
+    printf("Qual o salario base do funcionario? \n");
+    scanf("%f", &salariobase);
+    salariogratificacao = salariobase*1.05;
+    salarioareceber = salariogratificacao*0.93;
+
+    printf("O salario a receber eh: R$ %.2f", salarioareceber);
+return 0;
+}
+*/
+
+/* Exercicio 43
+int main (){
+    float valorinicial, valorcomdesconto, valorparcela, comissaovista, comissaoparcelada;
+    printf("Qual o valor total? \n");
+    scanf("%f", &valorinicial);
+    valorcomdesconto = valorinicial*0.9;
+    valorparcela = valorinicial*0.03;
+    comissaovista = valorcomdesconto*0.05;
+    comissaoparcelada = valorinicial*0.05;
+
+    printf("Total a pagar com desconto de 10 porcento: R$ %.2Lf \n", valorcomdesconto);
+    printf("O valor de cada parcela eh: R$ %.2Lf \n", valorparcela);
+    printf("A comissao do vendedor da venda a vista eh: R$ %.2Lf \n", comissaovista);
+    printf("A comissao do vendedor da venda parcelada eh: R$ %.2Lf \n", comissaoparcelada);
+
+return 0;
+}
+*/
+
+// Exercicio 44
