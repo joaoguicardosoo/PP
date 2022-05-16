@@ -527,4 +527,32 @@ return 0;
 }
 */
 
-// Exercicio 44
+/* Exercicio 44
+int main (){
+    float alturadegrau, alturadesejada;
+    int degrausnecessarios;
+    printf("Qual a altura do degrau da escada e a altura que deseja alcancar, separados por espacos: \n");
+    scanf("%f %f", &alturadegrau, &alturadesejada);
+    degrausnecessarios = alturadesejada/alturadegrau;
+
+    printf("Sera necessario %d degraus para atingir a altura de %.2f.", degrausnecessarios, alturadesejada);
+
+return 0;
+}
+*/
+
+/* Exercicio 45
+int main (){
+    char maiuscula;
+    int minuscula;
+    printf("Digite uma letra maiuscula: \n");
+    scanf("%c", &maiuscula);
+    minuscula = maiuscula+32;
+
+    printf("A letra digitada convertida para minusculo eh: %c", minuscula);
+
+return 0;
+}
+*/
+
+// Exercicio 46
