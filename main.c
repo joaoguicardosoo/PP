@@ -556,3 +556,13 @@ return 0;
 */
 
 // Exercicio 46
+int main (){
+    int x, reverso;
+    printf("Digite um numero inteiro positivo de tres digitos: \n");
+    scanf("%d", &x);
+    while (x != 0){
+        
+    }
+
+return 0;
+}
