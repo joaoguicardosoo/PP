@@ -561,8 +561,8 @@ int main (){
     printf("numero_lido = ");
     scanf("%d", &x);
     resto3 = x % 10;
-    resto1 = x/10;
     resto2 = (x / 10) % 10;
+    resto1 = x/10;
     resto1 = resto1 / 10;
     
     printf("numero_gerado = %d%d%d", resto3, resto2, resto1);
@@ -573,15 +573,22 @@ return 0;
 
 /* Exercicio 47
 int main (){
-    int x;
-    printf("Digite um numero de 4 digitos");
+    int x, x1, x2, x3, x4;
+    printf("Digite um numero de 4 digitos: ");
     scanf("%d", &x);
+    x4 = x % 10;
+    x  = x/10;
+    x3 = x % 10;
+    x  = x/10;
+    x2 = x % 10;
+    x  = x/10;
+    x1 = x % 10;
     
-    printf("")
+    printf("numero_gerado = %d \n %d \n %d \n %d", x1, x2, x3, x4);
     
     return 0;
 }
-*/ 
+*/
 
 /* Exercicio 48 
 int main (){
@@ -599,4 +606,9 @@ return 0;
 */
 
 // Exercicio 49
+int main (){
+    
+    
+    return 0;
+}
     
