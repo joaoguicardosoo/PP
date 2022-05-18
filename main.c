@@ -566,3 +566,29 @@ int main (){
 
 return 0;
 }
+
+// Exercicio 47
+int main (){
+    int x;
+    printf("Digite um numero de 4 digitos");
+    scanf("%d", &x);
+    
+    printf("")
+    
+    return 0;
+}
+*/ 
+
+// Exercicio 48 
+int main (){
+    int segundos, horas, minutos;
+    printf("Segundos: \n");
+    scanf("%d", &segundos);
+    
+    horas = segundos/3600;
+    minutos = segundos/60
+    
+    printf("Horas = %d", horas);
+    printf("Minutos = %d", minutos);
+return 0;
+}
