@@ -555,7 +555,7 @@ return 0;
 }
 */
 
-// Exercicio 46
+/* Exercicio 46
 int main (){
     int x, reverso;
     printf("Digite um numero inteiro positivo de tres digitos: \n");
@@ -566,8 +566,9 @@ int main (){
 
 return 0;
 }
+*/
 
-// Exercicio 47
+/* Exercicio 47
 int main (){
     int x;
     printf("Digite um numero de 4 digitos");
@@ -581,14 +582,14 @@ int main (){
 
 // Exercicio 48 
 int main (){
-    int segundos, horas, minutos;
+    float segundos, horas, minutos;
     printf("Segundos: \n");
-    scanf("%d", &segundos);
+    scanf("%f", &segundos);
     
     horas = segundos/3600;
-    minutos = segundos/60
+    minutos = segundos/60;
     
-    printf("Horas = %d", horas);
-    printf("Minutos = %d", minutos);
+    printf("Horas = %.4f", horas);
+    printf("Minutos = %.4f", minutos);
 return 0;
 }
