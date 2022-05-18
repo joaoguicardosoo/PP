@@ -589,7 +589,7 @@ int main (){
     horas = segundos/3600;
     minutos = segundos/60;
     
-    printf("Horas = %.4f", horas);
+    printf("Horas = %.4f \n", horas);
     printf("Minutos = %.4f", minutos);
 return 0;
 }
