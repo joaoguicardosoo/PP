@@ -580,7 +580,7 @@ int main (){
 }
 */ 
 
-// Exercicio 48 
+/* Exercicio 48 
 int main (){
     float segundos, horas, minutos;
     printf("Segundos: \n");
@@ -593,3 +593,7 @@ int main (){
     printf("Minutos = %.4f", minutos);
 return 0;
 }
+*/
+
+// Exercicio 49
+    
