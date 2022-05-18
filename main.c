@@ -557,12 +557,15 @@ return 0;
 
 /* Exercicio 46
 int main (){
-    int x, reverso;
-    printf("Digite um numero inteiro positivo de tres digitos: \n");
+    int x, resto1, resto2, resto3, numero_gerado;
+    printf("numero_lido = ");
     scanf("%d", &x);
-    while (x != 0){
-        
-    }
+    resto3 = x % 10;
+    resto1 = x/10;
+    resto2 = (x / 10) % 10;
+    resto1 = resto1 / 10;
+    
+    printf("numero_gerado = %d%d%d", resto3, resto2, resto1);
 
 return 0;
 }
