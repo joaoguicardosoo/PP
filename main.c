@@ -605,10 +605,38 @@ return 0;
 }
 */
 
-// Exercicio 49
+/* Exercicio 49
 int main (){
-    
-    
+    int hora, minuto, segundo, segundoduracao, horaseg, minseg, tempototal;
+    int aux;
+    printf("Horas: ");
+    scanf("%d", &hora);
+    printf("Minutos: ");
+    scanf("%d", &minuto);
+    printf("Segundos: ");
+    scanf("%d", &segundo);
+    printf("Duracao em segundos: ");
+    scanf("%d", &segundoduracao);
+
+    horaseg = hora*3600;
+    minseg = minuto*60;
+    tempototal = horaseg+minseg+segundo+segundoduracao;
+   
+    if (tempototal > 3600) {
+        hora = tempototal/3600;
+        aux = tempototal - hora*3600;
+    }
+    if (aux < 3600 && aux >= 60) {
+        minuto = aux/60;
+        aux = aux - minuto*60;
+    }
+    if (aux <= 59 && aux >= 0){
+        segundo = aux;
+    }
+        printf("Horario final: %d:%d:%d", hora, minuto, segundo);
+
     return 0;
 }
-    
+*/
+
+// Exercicio 50
