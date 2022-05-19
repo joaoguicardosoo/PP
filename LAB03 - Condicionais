@@ -140,37 +140,13 @@ int main(){
     float nota1, nota2, media;
     printf("Digite duas notas separadas por espaco: \n");
     scanf("%f %f", &nota1, &nota2);
+    media = nota1 + nota2/2;
 
-    if (nota1 < 0.0 & nota2 < 0.0){    // TODAS INVALIDAS
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 < 0.0 & nota2 > 10.0){   // TODAS INVALIDAS
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 < 0.0 & nota2 < 10.0){   // NOTA 1 INVALIDA NOTA 2 VALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 > 10.0 & nota2 < 10.0){  // NOTA 1 INVALIDA NOTA 2 VALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 > 10.0 & nota2 > 0.0){  // NOTA 1 INVALIDA  NOTA 2 VALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 < 10.0 & nota2 > 0.0){  // NOTA 1 INVALIDA  NOTA 2 VALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 > 0.0 & nota2 < 0.0){  // NOTA 1 VALIDA  NOTA 2 INVALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 > 0.0 & nota2 < 0.0){  // NOTA 1 VALIDA  NOTA 2 INVALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
-    }
-    if (nota1 > 0.0 & nota2 < 0.0){  // NOTA 1 VALIDA  NOTA 2 INVALIDA
-        printf("O Numero nao e valido, pois precisa ser entre 0.0 e 10.0.");
+    if ((0.00 <= nota1 <= 10.0) & (0.00 <= nota2 <= 10.0)){
+        printf = ("A media entre as notas eh: %f", media);
     }
     else {
-        media = (nota1 + nota2)/2;
-        printf = ("A media entre as notas eh: %f", media);
+        printf = ("Algum ou todos os numeros digitados nao estao entre 0.0 e 10.0.");
     }
 return 0;
 }
