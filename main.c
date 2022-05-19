@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+// Lista LAB02 Entrada Saida Variaveis - Programacao Procedimental
+
  /* Exercício 1
 int main(){
     int x;
@@ -647,6 +649,61 @@ int main (){
 
     anonascimento = anoatual-idade;
     printf("Ano de nascimento: %d", anonascimento);
+
+return 0;
+}
+*/
+
+/* Exercicio 51
+int main (){
+    float x,y,distancia;
+    printf("Digite o x: ");
+    scanf("%f", &x);
+    printf("Digite o y: ");
+    scanf("%f", &y);
+
+    distancia = sqrt((x*x)+(y*y));
+    printf("A distancia entre o ponto e a origem eh: %f", distancia);
+
+return 0;
+}
+*/
+
+/* Exercicio 52
+int main (){
+    int jogador1, jogador2, jogador3, premio, totalapostado, peso, j1recebe, j2recebe, j3recebe;
+    printf("Bolao jogador 1 R$: ");
+    scanf("%d", &jogador1);
+    printf("Bolao jogador 2 R$: ");
+    scanf("%d", &jogador2);
+    printf("Bolao jogador 3 R$: ");
+    scanf("%d", &jogador3);
+    printf("Informe o valor do premio: ");
+    scanf("%d", &premio);
+    totalapostado=jogador1+jogador2+jogador3;
+    peso=premio/totalapostado;
+    j1recebe=jogador1*peso;
+    j2recebe=jogador2*peso;
+    j3recebe=jogador3*peso;
+    printf("Jogador 1 recebera R$: %d\n", j1recebe);
+    printf("Jogador 2 recebera R$: %d\n", j2recebe);
+    printf("Jogador 3 recebera R$: %d\n", j3recebe);
+return 0;
+}
+*/
+
+/* Exercicio 53
+int main (){
+    float comprimento, largura, preco, custo;
+    printf("Qual o comprimento? ");
+    scanf("%f", &comprimento);
+    printf("Qual o largura? ");
+    scanf("%f", &largura);
+    printf("Qual o preco do metro? ");
+    scanf("%f", &preco);
+
+    custo = comprimento*largura*preco;
+    printf("O preco total sera de: R$ %.2f", custo);
 
 return 0;
 }
