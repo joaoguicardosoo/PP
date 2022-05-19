@@ -639,4 +639,15 @@ int main (){
 }
 */
 
-// Exercicio 50
+/* Exercicio 50
+int main (){
+    int idade, anoatual, anonascimento;
+    printf("Qual sua idade e o ano atual? ");
+    scanf("%d %d", &idade, &anoatual);
+
+    anonascimento = anoatual-idade;
+    printf("Ano de nascimento: %d", anonascimento);
+
+return 0;
+}
+*/
