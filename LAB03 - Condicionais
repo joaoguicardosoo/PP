@@ -59,21 +59,76 @@ return 0;
 }
 */
 
-// Exercicio 4
+/* Exercicio 4
 int main (){
-    float x,y;
+    float x,quadrado,raizquadrada;
     printf("Digite um numero: \n");
     scanf("%f", &x);
 
     if (x >= 1){
-        x = x*x;
-        printf("O numero ao quadrado eh: %f", x);
-
-        printf("A raiz quadrada do numero eh: %f", x);
+        quadrado = x*x;
+        printf("O numero ao quadrado eh: %.2f \n", quadrado);
+        raizquadrada = sqrt(x);
+        printf("A raiz quadrada do numero eh: %.2f", raizquadrada);
     }
     else{
         printf("Numero invalido!");
     }
 return 0;
 
+}
+*/
+
+
+/* Exercicio 5
+int main (){
+    int x, y, resto;
+    printf("Digite um numero: \n");
+    scanf("%d", &x);
+    resto = x % 2;
+
+    if (resto == 0){
+        printf("O numero eh par!\n");
+    }
+    else{
+        printf("O numero eh impar!");
+    }
+
+return 0;
+}
+*/
+
+/* Exercicio 6
+int main (){
+    int x, y, diferenca;
+    printf("Digite dois numeros inteiros separados por espaco: \n");
+    scanf("%d %d", &x, &y);
+    diferenca = x - y;
+
+    if (x > y){
+        printf("O numero maior eh: %d e a diferenca entre eles eh %d", x, diferenca);
+    }
+    else{
+        printf("O numero maior eh: %d e a diferenca entre eles eh %d.", y, diferenca);
+
+    }
+return 0;
+}
+*/
+
+// Exercicio 7
+int main (){
+    float x, y, diferenca;
+    printf("Digite dois numeros separados por espaco: \n");
+    scanf("%d %d", &x, &y);
+    diferenca = x - y;
+
+    if (x > y){
+        printf("O numero maior eh: %d e a diferenca entre eles eh %d", x, diferenca);
+    }
+    else{
+        printf("O numero maior eh: %d e a diferenca entre eles eh %d.", y, diferenca);
+
+    }
+return 0;
 }
