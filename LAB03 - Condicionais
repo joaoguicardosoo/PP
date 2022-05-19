@@ -116,19 +116,28 @@ return 0;
 }
 */
 
-// Exercicio 7
+/* Exercicio 7
 int main (){
     float x, y, diferenca;
     printf("Digite dois numeros separados por espaco: \n");
-    scanf("%d %d", &x, &y);
-    diferenca = x - y;
+    scanf("%f %f", &x, &y);
 
     if (x > y){
-        printf("O numero maior eh: %d e a diferenca entre eles eh %d", x, diferenca);
+        printf("O numero maior eh: %.2f", x);
     }
+    if (y > x){
+        printf("O numero maior eh: %.2f", y);
+        }
     else{
-        printf("O numero maior eh: %d e a diferenca entre eles eh %d.", y, diferenca);
-
+        printf("Numeros iguais");
     }
+return 0;
+}
+*/
+
+// Exercicio 8
+int main(){
+    
+
 return 0;
 }
