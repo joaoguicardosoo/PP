@@ -135,14 +135,14 @@ return 0;
 }
 */
 
-// Exercicio 8
+/* Exercicio 8
 int main(){
     float nota1, nota2, media;
     printf("Digite duas notas separadas por espaco: \n");
     scanf("%f %f", &nota1, &nota2);
     media = (nota1 + nota2)/2.0;
 
-     if (0.0<=nota1<=10.0 && 0.0<=nota2<=10.0){
+     if (0.0 <= nota1 <= 10.0 && 0.0 <= nota2 <= 10.0){
                 printf("A media entre as notas eh: %f", media);
         }
     else {
@@ -150,3 +150,48 @@ int main(){
     }
 return 0;
 }
+*/
+
+/* Exercicio 9
+int main (){
+    float salario, prestacao, parcelas;
+    printf("Digite o salario do trabalhador: \n");
+    scanf("%f", &salario);
+    printf("Quantas parcelas? \n");
+    scanf("%f", &parcelas);
+    prestacao = salario/parcelas;
+    if (prestacao > salario*0.2){
+        printf("Emprestimo nao concedido.");
+    }
+    else{
+        printf("Emprestimo concedido.");
+    }
+
+return 0;
+}
+*/
+
+// Exercicio 10
+int main (){
+    float altura, pesoideal;
+    char sexo;
+    printf("Qual a altura? \n");
+    scanf("%f", &altura);
+    printf("Qual o sexo? \n");
+    scanf("%c", &sexo);
+
+    switch (sexo)
+    {
+    case 'masculino':
+        pesoideal = ((72.7*altura) - 58);
+        printf("O peso ideal seria: %f", pesoideal);
+        break;
+    case 'feminino':
+        pesoideal = ((62.1*altura) - 44.7);
+        printf("O peso ideal seria: %f", pesoideal);
+    default:
+        printf("Digite masculino ou feminino!");
+        break;
+    }
+}
+//
