@@ -17,7 +17,7 @@ return 0;
 }
 */
 
-// Exercicio 2
+/* Exercicio 2
 int main (){
     int contadorfor = 1;
     int contadorwhile = 1;
