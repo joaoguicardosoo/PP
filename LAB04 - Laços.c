@@ -49,3 +49,17 @@ int main (){
     }
 return 0;
 }
+*/
+
+// Exercicio 3
+int main (){
+    int contagem = 10;
+    while (contagem >= 0){
+        printf("%d \n", contagem);
+        contagem = contagem - 1;
+    if (contagem == 0){
+        printf("FIM!");
+        }
+    }
+return 0;
+}
