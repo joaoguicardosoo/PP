@@ -51,15 +51,29 @@ return 0;
 }
 */
 
-// Exercicio 3
+/* Exercicio 3
 int main (){
     int contagem = 10;
     while (contagem >= 0){
         printf("%d \n", contagem);
         contagem = contagem - 1;
-    if (contagem == 0){
+    if (contagem == -1){
         printf("FIM!");
         }
     }
 return 0;
 }
+*/
+
+/* Exercicio 4
+int main (){
+    int inteiro;
+    int constante = 1000;
+    for (inteiro = 0; inteiro < 100000;){
+        printf("%d \n", inteiro);
+        inteiro = inteiro+constante;
+    }
+
+return 0;
+}
+*/
