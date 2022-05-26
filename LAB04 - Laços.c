@@ -19,20 +19,33 @@ return 0;
 
 // Exercicio 2
 int main (){
-    int contadorfor, contadorwhile = 1, contadordowhile = 1;
+    int contadorfor = 1;
+    int contadorwhile = 1;
+    int contadordowhile = 1;
     printf("Usando for: \n");
 
     if (contadorfor <= 100){
-    for (contadorfor = 0; contadorfor <= 100; contadorfor++){
-        printf("%d ", contadorfor);
+        for (contadorfor = 1; contadorfor <= 100; contadorfor++){
+        printf("%d \n", contadorfor);
         }
     }
 
     printf("Usando while: \n");
-    while (contadorwhile <= 100){
-        printf("%d ", contadordowhile);
-        contadordowhile ++;
+    if (contadorwhile <= 100){
+        while (contadorwhile <= 100){
+        printf("%d \n", contadorwhile);
+        contadorwhile ++;
+        }
     }
 
+    printf("Usando do while: \n");
+    if (contadordowhile <= 100){
+        do {
+        printf("%d \n", contadordowhile);
+        contadordowhile ++;
+        }
+        while (contadordowhile <= 100);{
+        }
+    }
 return 0;
 }
