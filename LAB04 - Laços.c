@@ -77,3 +77,18 @@ int main (){
 return 0;
 }
 */
+
+/* Exercicio 5
+int main(){
+    int valor, contador, somatotal = 0;
+    for (contador = 1; contador <= 10; contador++){
+        printf("Digite o %d valor: \n", contador);
+        scanf("%d", &valor);
+        somatotal = somatotal + valor;
+    }
+    printf("A soma total dos numeros eh: %d", somatotal);
+return 0;
+}
+*/
+
+// Exercicio 6
