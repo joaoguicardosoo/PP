@@ -91,4 +91,54 @@ return 0;
 }
 */
 
-// Exercicio 6
+/* Exercicio 6
+int main (){
+    int inteiro, valortotal = 0, i;
+    float media;
+    for (i = 0; i < 10; i++){
+        printf("Digite um numero inteiro: ");
+        scanf("%d", &inteiro);
+        valortotal = valortotal + inteiro;
+    }
+    if (i == 10){
+        media = valortotal/i;
+        printf("A media dos 10 numeros eh: %.2f", media);
+    }
+
+
+    return 0;
+}
+*/
+
+/* Exercicio 7
+int main (){
+    int inteiro, valortotal = 0, i;
+    float media;
+    for (i = 0; i < 10; i++){
+        printf("Digite um numero inteiro: ");
+        scanf("%d", &inteiro);
+        if (inteiro > 0){
+        valortotal = valortotal + inteiro;
+        }
+        else {
+            printf("Digite um numero positivo! \n");
+            break;
+        }
+    }
+    if (i == 10){
+        media = valortotal/i;
+        printf("A media dos 10 numeros eh: %.2f", media);
+    }
+
+
+    return 0;
+}
+*/
+
+// Exercicio 8
+int main (){
+    int inteiro
+
+
+    return 0;
+}
