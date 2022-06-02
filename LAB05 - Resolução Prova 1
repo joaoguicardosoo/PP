@@ -64,7 +64,7 @@ return 0;
 
 // Exercicio 6
 int main (){
-        int x, a, b;
+        int v1, v2;
         int escolha, loop;
         printf("Escolha uma opcao: ");
         printf("1 - Adicao");
@@ -78,18 +78,21 @@ int main (){
 
         while(loop == 0){
             switch(escolha){
-            case 1
-            
-            
-            
-            
-            
-            
-            
-            
+                case 1:
+                    printf("Digite dois numeros: ");
+                    scanf("%d %d", v1, v2);
+                    printf("A soma dos dois numeros eh: %d", v1+v2);
+
+
+
+
+
+
+
+
             }
-            
-            
+
+
         }
 
 
