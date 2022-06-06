@@ -62,7 +62,7 @@ return 0;
 }
 */
 
-// Exercicio 6
+/* Exercicio 6
 int main (){
         int v1, v2;
         int escolha;
@@ -74,31 +74,36 @@ int main (){
         printf("4 - Divisao \n");
         printf("5 - Modulo \n");
         printf("6 - SAIR \n");
-        printf(":");
-        scanf("%d", &escolha);
 
         while(loop == 0){
+        printf("Qual a sua opcao?");
+        scanf("%d", &escolha);
             switch(escolha){
                 case 1:
                     printf("Digite dois numeros: ");
                     scanf("%d %d", &v1, &v2);
                     printf("A soma dos dois numeros eh: %d \n", v1+v2);
+                    break;
                 case 2:
                     printf("Digite dois numeros: ");
                     scanf("%d %d", &v1, &v2);
                     printf("A subtracao dos dois numeros eh: %d \n", v1-v2);
+                    break;
                 case 3:
                     printf("Digite dois numeros: ");
                     scanf("%d %d", &v1, &v2);
                     printf("A multiplicacao dos dois numeros eh: %d \n", v1*v2);
+                    break;
                 case 4:
                     printf("Digite dois numeros: ");
                     scanf("%d %d", &v1, &v2);
                     printf("A divisao dos dois numeros eh: %d \n", v1/v2);
+                    break;
                 case 5:
                     printf("Digite dois numeros: ");
                     scanf("%d %d", &v1, &v2);
                     printf("O modulo dos dois numeros eh: %d \n", v1%v2);
+                    break;
                 case 6:
                     loop = 1;
 
@@ -108,3 +113,4 @@ int main (){
 
 return 0;
 }
+*/
