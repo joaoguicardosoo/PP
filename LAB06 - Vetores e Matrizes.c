@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+// Exercicio 1
 int main()
 {
     int A[5] = {1, 0, 5, -2, -5, 7};
@@ -9,4 +12,4 @@ int main()
 
 return 0;
 }
-
+//
