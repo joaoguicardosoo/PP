@@ -25,7 +25,7 @@
     };
     typedef struct compromisso compromisso;
 
-    
+
 
 void main (){            // Atribuindo um dia a struct "dt" e imprimindo
     data dt;
@@ -36,11 +36,23 @@ void main (){            // Atribuindo um dia a struct "dt" e imprimindo
 }
 */
 
-
 // Exercicio 2
     struct aluno{
         char nome[30];
         int matricula;
-        char curso;
-
+        char curso[30];
     };
+    typedef struct aluno aluno;
+void main(){
+    aluno alunos[5];
+    int i;
+    for (i=0; i<=4; i++){
+        gets(alunos[i].nome);
+        scanf("%d", &alunos[i].matricula);
+        gets(alunos[i].curso);
+        printf("%c %d %c", alunos.nome, alunos.matricula. alunos.curso);
+    }
+
+
+
+}
