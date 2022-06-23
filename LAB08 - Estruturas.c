@@ -45,16 +45,44 @@ void main (){            // Atribuindo um dia a struct "dt" e imprimindo
         char curso[30];
     };
     typedef struct aluno aluno;
-void main(){
+int main(){
     aluno alunos[5];
     int i;
     for (i=0; i<=4; i++){
+        fflush(stdin);
+        printf("Nome: ");
         gets(alunos[i].nome);
+        printf("Matricula: ");
         scanf("%d", &alunos[i].matricula);
+        fflush(stdin);
+        printf("Curso: ");
         gets(alunos[i].curso);
-        printf("%c", alunos[i].nome);
     }
+        printf("%s \n", alunos[0].nome);
+        printf("%d \n", alunos[0].matricula);
+        printf("%s \n \n", alunos[0].curso);
 
+        printf("%s \n", alunos[1].nome);
+        printf("%d \n", alunos[1].matricula);
+        printf("%s \n \n", alunos[1].curso);
 
+        printf("%s \n", alunos[2].nome);
+        printf("%d \n", alunos[2].matricula);
+        printf("%s \n \n", alunos[2].curso);
 
+        printf("%s \n", alunos[3].nome);
+        printf("%d \n", alunos[3].matricula);
+        printf("%s \n \n", alunos[3].curso);
+
+        printf("%s \n", alunos[4].nome);
+        printf("%d \n", alunos[4].matricula);
+        printf("%s \n \n", alunos[4].curso);
+
+        printf("%s \n", alunos[5].nome);
+        printf("%d \n", alunos[5].matricula);
+        printf("%s \n", alunos[5].curso);
+
+    system("pause");
+
+return 0;
 }
