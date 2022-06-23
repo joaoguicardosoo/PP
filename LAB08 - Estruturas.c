@@ -30,8 +30,10 @@
 void main (){            // Atribuindo um dia a struct "dt" e imprimindo
     data dt;
     dt.dia = 23;
-    printf("%d", dt.dia);
-
+    horario hr;
+    hr.hora = 2;
+    printf("Dia: %d \n", dt.dia);
+    printf("Hora: %d", hr.hora);
 
 }
 */
@@ -50,7 +52,7 @@ void main(){
         gets(alunos[i].nome);
         scanf("%d", &alunos[i].matricula);
         gets(alunos[i].curso);
-        printf("%c %d %c", alunos.nome, alunos.matricula. alunos.curso);
+        printf("%c", alunos[i].nome);
     }
 
 
