@@ -92,34 +92,35 @@ return 0;
 struct aluno{
     int matricula;
     char nome[50];
-    float nota1;
-    float nota2;
-    float nota3;
+    int nota1;
+    int nota2;
+    int nota3;
 };
 
 typedef struct aluno aluno;
 
 int main (){
     int i, j;
-    float media;
+    float media[5];
     aluno aluno[5];
-    for (i=0; i<=1; i++){
+    for (i=1; i<=5; i++){
         printf("Qual o numero da matricula? \n");
         scanf("%d", &aluno[i].matricula);
         printf("Qual o nome do aluno? \n");
         fflush(stdin);
         gets(aluno[i].nome);
         printf("Qual a nota da primeira prova? \n");
-        scanf("%f", &aluno[i].nota1);
+        scanf("%d", &aluno[i].nota1);
         printf("Qual a nota da segunda prova? \n");
-        scanf("%f", &aluno[i].nota2);
+        scanf("%d", &aluno[i].nota2);
         printf("Qual a nota da terceira prova? \n");
-        scanf("%f", &aluno[i].nota3);
-        media[i] = (aluno[i].nota1 + aluno[i].nota2 + aluno[i].nota3)/3
+        scanf("%d", &aluno[i].nota3);
+        media[i] = (aluno[i].nota1 + aluno[i].nota2 + aluno[i].nota3)/3;
     }
-        
-
-    printf("%d", aluno[0].nome);
+        printf("Medias de cada aluno: \n");
+        for(i=1; i<=2; i++){
+            printf("A media do aluno %d eh: %f \n", i ,media[i]);
+        }
 
 return 0;
 }
