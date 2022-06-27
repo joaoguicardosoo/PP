@@ -38,7 +38,7 @@ void main (){            // Atribuindo um dia a struct "dt" e imprimindo
 }
 */
 
-// Exercicio 2
+/* Exercicio 2
     struct aluno{
         char nome[30];
         int matricula;
@@ -83,6 +83,42 @@ int main(){
         printf("%s \n", alunos[5].curso);
 
     system("pause");
+
+return 0;
+}
+*/
+
+// Exercicio 3
+struct aluno{
+    int matricula;
+    char nome[50];
+    float nota1;
+    float nota2;
+    float nota3;
+};
+
+typedef struct aluno aluno;
+
+int main (){
+    int i, j;
+    aluno aluno[5];
+    for (i=0; i<=1; i++){
+        printf("Qual o numero da matricula? \n");
+        scanf("%d", &aluno[i].matricula);
+        printf("Qual o nome do aluno? \n");
+        fflush(stdin);
+        gets(aluno[i].nome);
+        printf("Qual a nota da primeira prova? \n");
+        scanf("%f", &aluno[i].nota1);
+        printf("Qual a nota da segunda prova? \n");
+        scanf("%f", &aluno[i].nota2);
+        printf("Qual a nota da terceira prova? \n");
+        scanf("%f", &aluno[i].nota3);
+    }
+
+
+
+    printf("%s", aluno[0].nome);
 
 return 0;
 }
