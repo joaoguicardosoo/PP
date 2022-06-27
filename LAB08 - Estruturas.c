@@ -101,6 +101,7 @@ typedef struct aluno aluno;
 
 int main (){
     int i, j;
+    float media;
     aluno aluno[5];
     for (i=0; i<=1; i++){
         printf("Qual o numero da matricula? \n");
@@ -114,11 +115,11 @@ int main (){
         scanf("%f", &aluno[i].nota2);
         printf("Qual a nota da terceira prova? \n");
         scanf("%f", &aluno[i].nota3);
+        media[i] = (aluno[i].nota1 + aluno[i].nota2 + aluno[i].nota3)/3
     }
+        
 
-
-
-    printf("%s", aluno[0].nome);
+    printf("%d", aluno[0].nome);
 
 return 0;
 }
