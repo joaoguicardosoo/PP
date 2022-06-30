@@ -9,59 +9,57 @@ int data(int dia, int mes, int ano){
     char mesextenso[25];
     switch (mes){
     case 01:
-        mesextenso="janeiro";
+        printf("%d de Janeiro de %d", dia, ano);;
         break;
 
     case 02:
-        mesextenso="fevereiro";
+        printf("%d de Fevereiro de %d", dia, ano);;
         break;
 
     case 03:
-        mesextenso="marco";
+        printf("%d de Marco de %d", dia, ano);;
         break;
 
     case 04:
-        mesextenso="abril";
+        printf("%d de Abril de %d", dia, ano);;
         break;
 
     case 05:
-        mesextenso="maio";
+        printf("%d de Maio de %d", dia, ano);;
         break;
 
     case 06:
-        mesextenso="junho";
+        printf("%d de Junho de %d", dia, ano);;
         break;
 
     case 07:
-        mesextenso="julho";
+        printf("%d de Julho de %d", dia, ano);;
         break;
 
-    case 08:
-        mesextenso="agosto";
+    case '08':
+        printf("%d de Agosto de %d", dia, ano);;
         break;
 
-    case 09:
-        mesextenso="setembro";
+    case '09':
+        printf("%d de Setembro de %d", dia, ano);;
         break;
 
     case 10:
-        mesextenso="outubro";
+        printf("%d de Outubro de %d", dia, ano);;
         break;
 
     case 11:
-        mesextenso="novembro";
+        printf("%d de Novembro de %d", dia, ano);;
         break;
 
     case 12:
-        mesextenso="dezembro";
+        printf("%d de Dezembro de %d", dia, ano);;
         break;
     default:
         printf("Mes Invalido!");
         break;
     }
-
-    printf("%d de %s de %d", dia, mesextenso, ano);
-
+return 1;
 }
 
 
@@ -80,3 +78,19 @@ void main(){
     data(dia, mes, ano);
 
 }
+
+
+/* Exercicio 2
+
+int convertesegundo(int horas, int minutos, int segundos){
+    return ((horas*3600)+(minutos*60)+segundos);
+}
+
+int main (){
+
+
+
+
+return 0;
+}
+*/
