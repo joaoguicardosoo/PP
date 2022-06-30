@@ -6,7 +6,6 @@
 
 /* Exercicio 1
 int data(int dia, int mes, int ano){
-    char mesextenso[25];
     switch (mes){
     case 01:
         printf("%d de Janeiro de %d", dia, ano);;
@@ -61,7 +60,6 @@ int data(int dia, int mes, int ano){
     }
 return 1;
 }
-*/
 
 void main(){
     int dia;
@@ -78,16 +76,43 @@ void main(){
     data(dia, mes, ano);
 
 }
+*/
 
-
-// Exercicio 2
+/* Exercicio 2
 
 int convertesegundo(int horas, int minutos, int segundos){
-    return ((horas*3600)+(minutos*60)+segundos);
+    int segundototal;
+    segundototal = (horas*3600)+(minutos*60)+segundos;
+    printf("Total em segundos: %d", segundototal);
+    return 1;
 }
 
 int main (){
+    int horas;
+    int minutos;
+    int segundos;
 
+    printf("Digite as horas: ");
+    scanf("%d", &horas);
+    printf("Digite os minutos: ");
+    scanf("%d", &minutos);
+    printf("Digite os segundos: ");
+    scanf("%d", &segundos);
+
+    convertesegundo(horas, minutos, segundos);
+
+return 0;
+}
+*/
+
+// Exercicio 3
+int mediaalunos(int nota1, int nota2, int nota3, char letra){
+
+
+
+}
+
+int main (){
 
 
 
