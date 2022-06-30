@@ -106,9 +106,9 @@ return 0;
 */
 
 // Exercicio 3
-int mediaalunos(int nota1, int nota2, int nota3, char letra){
+int mediaalunos(int nota1, int nota2, int nota3, char letra[1]){
     int media;
-    switch (letra){
+    switch (letra[1]){
     case 'A':
         media = (nota1+nota2+nota3)/3;
         printf("A media aritmetica das notas dos alunos eh: %d", media);
@@ -118,7 +118,7 @@ int mediaalunos(int nota1, int nota2, int nota3, char letra){
         media = ((nota1*5)+(nota2*3)+(nota3*2))/10;
         printf("A media ponderada das notas dos alunos eh: %d", media);
     }
-    return 1;
+    return 0;
 
 }
 
@@ -135,7 +135,7 @@ int main (){
     printf("Qual media? A ou P: ");
     scanf(" %c", &letra);
 
-    mediaalunos(nota1, nota2, nota3, letra);
+    mediaalunos(nota1, nota2, nota3, letra[1]);
 
 return 0;
 }
