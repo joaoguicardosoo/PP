@@ -4,7 +4,7 @@
 
 
 
-// Exercicio 1
+/* Exercicio 1
 int data(int dia, int mes, int ano){
     char mesextenso[25];
     switch (mes){
@@ -61,7 +61,7 @@ int data(int dia, int mes, int ano){
     }
 return 1;
 }
-
+*/
 
 void main(){
     int dia;
@@ -80,7 +80,7 @@ void main(){
 }
 
 
-/* Exercicio 2
+// Exercicio 2
 
 int convertesegundo(int horas, int minutos, int segundos){
     return ((horas*3600)+(minutos*60)+segundos);
@@ -93,4 +93,3 @@ int main (){
 
 return 0;
 }
-*/
