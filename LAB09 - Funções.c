@@ -139,3 +139,34 @@ int main (){
 
 return 0;
 }
+
+
+// Exercicio 4
+
+
+/* Exercicio 5
+int simplifica (int numerador, int denominador){
+     int aux, resto;
+     while(denominador!=0){
+        aux = numerador%denominador;
+        numerador = denominador;
+        denominador = resto;
+     }
+     return numerador;
+}
+
+int main (){
+    int numerador, denominador, a,b;
+    printf("Qual o numerador? ");
+    scanf("%d", &numerador);
+    printf("Qual o denominador? ");
+    scanf("%d", &denominador);
+
+    simplifica(numerador, denominador);
+
+    printf("MDC: %d", numerador);
+
+
+return 0;
+}
+*/
