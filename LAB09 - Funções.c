@@ -84,7 +84,7 @@ return 0;
 }
 */
 
-// Exercicio 3
+/* Exercicio 3
 int mediaalunos(int nota1, int nota2, int nota3, char letra[1]){
     int media;
     switch (letra[1]){
@@ -118,7 +118,7 @@ int main (){
 
 return 0;
 }
-
+*/
 
 // Exercicio 4
 
@@ -131,7 +131,7 @@ return 0;
 }
 */
 
-// Exercicio 6
+/* Exercicio 6
 
 
 int cont_a = 0;
@@ -176,3 +176,4 @@ int main(){
 
 return 0;
 }
+*/
