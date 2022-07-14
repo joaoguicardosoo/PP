@@ -178,3 +178,49 @@ int main(){
 return 0;
 }
 */
+
+// Exercicio 7
+
+struct Ponto{
+    int x;
+    int y;
+};
+typedef struct Ponto Ponto;
+
+int dentroRet (struct Ponto v1, struct Ponto v2, struct Ponto p);
+
+int main(){
+    Ponto v1;
+    Ponto v2;
+    Ponto p;
+    int i;
+
+    printf("Digite o X do v1: ");
+    scanf("%d", &v1.x);
+    printf("Digite o Y do v1: ");
+    scanf("%d", &v1.y);
+    printf("Digite o X do v2: ");
+    scanf("%d", &v2.x);
+    printf("Digite o Y do v2: ");
+    scanf("%d", &v2.y);
+    printf("Digite o X do ponto: ");
+    scanf("%d", &p.x);
+    printf("Digite o Y do ponto: ");
+    scanf("%d", &p.y);
+
+int dentroRet(Ponto v1, Ponto v2, Ponto p);
+
+
+return 0;
+}
+
+int dentroRet (struct Ponto v1, struct Ponto v2, struct Ponto p){
+    if ()
+
+
+    return 1;
+
+
+
+    return 0;
+}
