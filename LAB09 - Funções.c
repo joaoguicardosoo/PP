@@ -185,14 +185,13 @@ struct Ponto{
     int x;
     int y;
 };
-typedef struct Ponto Ponto;
 
-int dentroRet (struct Ponto v1, struct Ponto v2, struct Ponto p);
+int dentroRet(struct Ponto v1, struct Ponto v2, struct Ponto p);
 
 int main(){
-    Ponto v1;
-    Ponto v2;
-    Ponto p;
+    struct Ponto v1;
+    struct Ponto v2;
+    struct Ponto p;
     int i;
 
     printf("Digite o X do v1: ");
@@ -208,19 +207,18 @@ int main(){
     printf("Digite o Y do ponto: ");
     scanf("%d", &p.y);
 
-int dentroRet(Ponto v1, Ponto v2, Ponto p);
 
+printf("%d", dentroRet(struct Ponto v1, struct Ponto v2, struct Ponto p));
 
 return 0;
 }
 
 int dentroRet (struct Ponto v1, struct Ponto v2, struct Ponto p){
-    if ()
-
-
-    return 1;
-
-
-
-    return 0;
+    if ((p.x > v1.x) && (p.x < v2.x) && (p.y > v1.y) && (p.y < v2.y)){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
+
