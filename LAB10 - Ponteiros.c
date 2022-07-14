@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-// Exercicio 1
+/* Exercicio 1
 
 int main (){
     int x, *a;
@@ -40,6 +40,26 @@ int main (){
 
 return 0;
 }
-//
+*/
 
-// Exercício 2
+// Exercicio 2
+int main (){
+    int x, y;
+
+    x = 1;
+    y = 2;
+
+    printf("%x \n", &x);
+    printf("%x \n", &y);
+
+    if (&x > &y){
+        printf("Endereco: %x \n", &x);
+        printf("Conteudo: %d", x);
+    }
+    else{
+        printf("Endereco: &x", &y);
+    }
+
+
+return 0;
+}
