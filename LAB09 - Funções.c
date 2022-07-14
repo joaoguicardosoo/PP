@@ -168,9 +168,10 @@ int main(){
     }
     printf("\n\n");
     printf("Vetor A");
-    for(i=0; i<cont_a]; i++){
+    for(i=0; i < cont_a; i++){
         printf("%d ", a[i]);
     printf("\n\n");
+    }
 
 
 
