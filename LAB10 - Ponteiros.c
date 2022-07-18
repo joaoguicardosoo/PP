@@ -84,16 +84,12 @@ return 0;
 int main (){
     float a[2][2];
     int i, j;
-    a[2] = {1,2,3};
 
     for (i=0; i<3; i++){
         for (j=0; j<3; j++){
-            printf("%x", &a[i][j])
+            printf("Endereco de a[%d][%d] = %x \n", i, j, &a[i][j]);
         }
     }
-
-
-
 
 return 0;
 }
