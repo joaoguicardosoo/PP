@@ -42,7 +42,7 @@ return 0;
 }
 */
 
-// Exercicio 2
+/* Exercicio 2
 int main (){
     int x, y;
 
@@ -59,6 +59,40 @@ int main (){
     else{
         printf("Endereco: &x", &y);
     }
+
+
+return 0;
+}
+*/
+
+/* Exercicio 3
+
+int main (){
+    float x[9] = {1,2,3,4,5,6,7,8,9,10};
+    int i;
+
+    for(i=0; i<10; i++){
+        printf("Endereco da posicao %d: %x \n", i, &x[i]);
+    }
+
+
+return 0;
+}
+*/
+
+// Exercicio 4
+int main (){
+    float a[2][2];
+    int i, j;
+    a[2] = {1,2,3};
+
+    for (i=0; i<3; i++){
+        for (j=0; j<3; j++){
+            printf("%x", &a[i][j])
+        }
+    }
+
+
 
 
 return 0;
