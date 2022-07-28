@@ -63,11 +63,18 @@ return 0;
 // Exercicio 3
 int main(){
     int *x;
+    int i, contador;
+    x = (int *) calloc(1500, sizeof(int));
 
-
-
-
+    for (i = 0; i<1500; i++){
+        if (x[i] == 0){
+            contador = contador + 1;
+        }
+        else {
+            printf("Nao possui zero!");
+        }
+    }
+        printf("Quantidade de zeros no array: %d", contador);
 
 return 0;
 }
-*/
