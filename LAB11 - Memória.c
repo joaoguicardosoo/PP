@@ -4,8 +4,8 @@
 
 
 
-// Exercicio 1
-int main (){)
+/* Exercicio 1
+int main (){
     int tam, i;
     int *x;
 
@@ -16,7 +16,19 @@ int main (){)
 
     for (i=0; i<tam; i++){
         printf("Insira posicao %d: \n", i);
-        scanf("%d", *x[i]);
+        scanf("%d", &x[i]);
     }
 
-    
+    for (i=0; i<tam; i++){
+        printf("Posicao %d: %d. \n", i, x[i]);
+    }
+
+
+    free(x);
+
+return 0;
+
+}
+*/
+
+
