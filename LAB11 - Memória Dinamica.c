@@ -60,10 +60,11 @@ return 0;
 */
 
 
-// Exercicio 3
+/* Exercicio 3
 int main(){
     int *x;
-    int i, contador;
+    int i;
+    int contador = 0;
     x = (int *) calloc(1500, sizeof(int));
 
     for (i = 0; i<1500; i++){
@@ -76,5 +77,32 @@ int main(){
     }
         printf("Quantidade de zeros no array: %d", contador);
 
+    free (x);
+
+return 0;
+}
+*/
+
+// Exercicio 4
+int main (){
+    int *x;
+    int i;
+    int tamanho = 5;
+
+    x = (int *) malloc(tamanho*(sizeof(int)));
+
+    for (i=0; i<tamanho; i++){
+        printf("Insira posicao %d: \n", i);
+        scanf("%d", &x[i]);
+        if (x[i] < 0){
+            break();
+            }
+        }
+
+      for (i=0; i<tam; i++){
+        printf("Posicao %d: %d. \n", i, x[i]);
+      }
+
+    realloc(x, 30)
 return 0;
 }
