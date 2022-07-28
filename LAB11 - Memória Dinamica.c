@@ -31,4 +31,43 @@ return 0;
 }
 */
 
+/* Exercicio 2
 
+void* alocadinamica(int tam){
+    return malloc(tam*(sizeof(char)));
+
+}
+
+int main (){
+    int tam;
+    char *x;
+
+    printf("Qual sera o tamanho do array? ");
+    scanf("%d", &tam);
+
+    x = (char *) alocadinamica(tam);
+
+    printf("Insira a string: \n");
+    fflush(stdin);
+    gets(x);
+
+    printf("%s \n", x);
+
+    free(x);
+
+return 0;
+}
+*/
+
+
+// Exercicio 3
+int main(){
+    int *x;
+
+
+
+
+
+return 0;
+}
+*/
