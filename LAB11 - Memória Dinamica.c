@@ -108,7 +108,7 @@ return 0;
 }
 */
 
-// Exercicio 5
+/* Exercicio 5
 struct aluno {
     int matricula;
     char sobrenome;
@@ -117,7 +117,6 @@ struct aluno {
 typedef struct aluno aluno;
 
 int main (){
-    aluno aluno;
     int qtdaluno = 0;
     int *x;
     int i;
@@ -125,24 +124,58 @@ int main (){
     printf("Quantos alunos serao armazenados? ");
     scanf("%d", &qtdaluno);
 
-    x = (int *) malloc(qtdaluno*(sizeof(qtdaluno)));
+    aluno alunos[qtdaluno];
+    x = (int *) malloc(qtdaluno*(sizeof(int)));
 
     for(i=0; i<qtdaluno; i++){
         printf("Matricula do aluno %d: ", i);
-        scanf("%d", &aluno[i].matricula);
+        scanf("%d", &alunos[i].matricula);
         printf("Sobrenome do aluno %d: ", i);
         fflush(stdin);
-        gets(aluno[i].sobrenome);
+        gets(alunos[i].sobrenome);
+        fflush(stdin);
         printf("Ano de nascimento do aluno %d: ");
-        scanf("%d", &aluno[i].anonascimento);
+        scanf("%d", &alunos[i].anonascimento);
     }
 
     for (i=0; i<qtdaluno; i++){
-        printf("Aluno %d, matricula: %d", aluno[i].matricula);
-        printf("Aluno %d, sobrenome: %c", aluno[i].sobrenome);
-        printf("Aluno %d, ano de nascimento: %d", aluno[i].anonascimento);
+        printf("Aluno %d, matricula: %d", alunos[i].matricula);
+        printf("Aluno %d, sobrenome: %c", alunos[i].sobrenome);
+        printf("Aluno %d, ano de nascimento: %d", alunos[i].anonascimento);
     }
 
+
+return 0;
+}
+*/
+
+// Exercicio 6
+int main (){
+    int linha, coluna;
+    int i, j;
+    int *x, *y;
+
+    printf("Quantas linhas? ");
+    scanf("%d", &linha);
+    printf("Quantas colunas? ");
+    scanf("%d", &coluna);
+
+    x = (int *) malloc(linha*(sizeof(int)));
+    y = (int *) malloc(coluna*(sizeof(int)));
+
+    int a[linha][coluna];
+
+    for(i=0; i<linha; i++){
+        for(j=0; j<coluna; j++){
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (i=0; i<linha; i++){
+        for (j=0; j<coluna; j++){
+            printf("%d", a[i][j]);
+        }
+    }
 
 return 0;
 }
