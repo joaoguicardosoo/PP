@@ -83,7 +83,7 @@ return 0;
 }
 */
 
-// Exercicio 4
+/* Exercicio 4
 int main (){
     int *x;
     int i;
@@ -104,5 +104,45 @@ int main (){
       }
 
     realloc(x, 30)
+return 0;
+}
+*/
+
+// Exercicio 5
+struct aluno {
+    int matricula;
+    char sobrenome;
+    int anonascimento;
+};
+typedef struct aluno aluno;
+
+int main (){
+    aluno aluno;
+    int qtdaluno = 0;
+    int *x;
+    int i;
+
+    printf("Quantos alunos serao armazenados? ");
+    scanf("%d", &qtdaluno);
+
+    x = (int *) malloc(qtdaluno*(sizeof(qtdaluno)));
+
+    for(i=0; i<qtdaluno; i++){
+        printf("Matricula do aluno %d: ", i);
+        scanf("%d", &aluno[i].matricula);
+        printf("Sobrenome do aluno %d: ", i);
+        fflush(stdin);
+        gets(aluno[i].sobrenome);
+        printf("Ano de nascimento do aluno %d: ");
+        scanf("%d", &aluno[i].anonascimento);
+    }
+
+    for (i=0; i<qtdaluno; i++){
+        printf("Aluno %d, matricula: %d", aluno[i].matricula);
+        printf("Aluno %d, sobrenome: %c", aluno[i].sobrenome);
+        printf("Aluno %d, ano de nascimento: %d", aluno[i].anonascimento);
+    }
+
+
 return 0;
 }
