@@ -1,126 +1,149 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 
+
 /* Exercicio 1
-    struct horario{
-        int hora;
-        int minutos;
-        int segundos;
-    };
-    typedef struct horario horario;
+int main (){
+    int tam, i;
+    int *x;
 
-    struct data{
-        int dia;
-        int mes;
-        int ano;
-    };
-    typedef struct data data;
+    printf("Qual sera o tamanho do array? ");
+    scanf("%d", &tam);
 
-    struct compromisso{
-        data dt;
-        horario hr;
-        char texto[300];
-    };
-    typedef struct compromisso compromisso;
+    x = (int *) malloc(tam*(sizeof(int)));
+
+    for (i=0; i<tam; i++){
+        printf("Insira posicao %d: \n", i);
+        scanf("%d", &x[i]);
+    }
+
+    for (i=0; i<tam; i++){
+        printf("Posicao %d: %d. \n", i, x[i]);
+    }
 
 
+    free(x);
 
-void main (){            // Atribuindo um dia a struct "dt" e imprimindo
-    data dt;
-    dt.dia = 23;
-    horario hr;
-    hr.hora = 2;
-    printf("Dia: %d \n", dt.dia);
-    printf("Hora: %d", hr.hora);
+return 0;
 
 }
 */
 
 /* Exercicio 2
-    struct aluno{
-        char nome[30];
-        int matricula;
-        char curso[30];
-    };
-    typedef struct aluno aluno;
-int main(){
-    aluno alunos[5];
-    int i;
-    for (i=0; i<=4; i++){
-        fflush(stdin);
-        printf("Nome: ");
-        gets(alunos[i].nome);
-        printf("Matricula: ");
-        scanf("%d", &alunos[i].matricula);
-        fflush(stdin);
-        printf("Curso: ");
-        gets(alunos[i].curso);
-    }
-        printf("%s \n", alunos[0].nome);
-        printf("%d \n", alunos[0].matricula);
-        printf("%s \n \n", alunos[0].curso);
 
-        printf("%s \n", alunos[1].nome);
-        printf("%d \n", alunos[1].matricula);
-        printf("%s \n \n", alunos[1].curso);
+void* alocadinamica(int tam){
+    return malloc(tam*(sizeof(char)));
 
-        printf("%s \n", alunos[2].nome);
-        printf("%d \n", alunos[2].matricula);
-        printf("%s \n \n", alunos[2].curso);
+}
 
-        printf("%s \n", alunos[3].nome);
-        printf("%d \n", alunos[3].matricula);
-        printf("%s \n \n", alunos[3].curso);
+int main (){
+    int tam;
+    char *x;
 
-        printf("%s \n", alunos[4].nome);
-        printf("%d \n", alunos[4].matricula);
-        printf("%s \n \n", alunos[4].curso);
+    printf("Qual sera o tamanho do array? ");
+    scanf("%d", &tam);
 
-        printf("%s \n", alunos[5].nome);
-        printf("%d \n", alunos[5].matricula);
-        printf("%s \n", alunos[5].curso);
+    x = (char *) alocadinamica(tam);
 
-    system("pause");
+    printf("Insira a string: \n");
+    fflush(stdin);
+    gets(x);
+
+    printf("%s \n", x);
+
+    free(x);
 
 return 0;
 }
 */
 
-// Exercicio 3
-struct aluno{
-    int matricula;
-    char nome[50];
-    int nota1;
-    int nota2;
-    int nota3;
-};
 
+/* Exercicio 3
+int main(){
+    int *x;
+    int i;
+    int contador = 0;
+    x = (int *) calloc(1500, sizeof(int));
+
+    for (i = 0; i<1500; i++){
+        if (x[i] == 0){
+            contador = contador + 1;
+        }
+        else {
+            printf("Nao possui zero!");
+        }
+    }
+        printf("Quantidade de zeros no array: %d", contador);
+
+    free (x);
+
+return 0;
+}
+*/
+
+/* Exercicio 4
+int main (){
+    int *x;
+    int i;
+    int tamanho = 5;
+
+    x = (int *) malloc(tamanho*(sizeof(int)));
+
+    for (i=0; i<tamanho; i++){
+        printf("Insira posicao %d: \n", i);
+        scanf("%d", &x[i]);
+        if (x[i] < 0){
+            break();
+            }
+        }
+
+      for (i=0; i<tam; i++){
+        printf("Posicao %d: %d. \n", i, x[i]);
+      }
+
+    realloc(x, 30)
+return 0;
+}
+*/
+
+// Exercicio 5
+struct aluno {
+    int matricula;
+    char sobrenome;
+    int anonascimento;
+};
 typedef struct aluno aluno;
 
 int main (){
-    int i, j;
-    float media[5];
-    aluno aluno[5];
-    for (i=1; i<=5; i++){
-        printf("Qual o numero da matricula? \n");
-        scanf("%d", &aluno[i].matricula);
-        printf("Qual o nome do aluno? \n");
+    int qtdaluno = 0;
+    int *x;
+    int i;
+
+    printf("Quantos alunos serao armazenados? ");
+    scanf("%d", &qtdaluno);
+
+    aluno alunos[qtdaluno];
+    x = (int *) malloc(qtdaluno*(sizeof(int)));
+
+    for(i=0; i<qtdaluno; i++){
+        printf("Matricula do aluno %d: ", i);
+        scanf("%d", &alunos[i].matricula);
+        printf("Sobrenome do aluno %d: ", i);
         fflush(stdin);
-        gets(aluno[i].nome);
-        printf("Qual a nota da primeira prova? \n");
-        scanf("%d", &aluno[i].nota1);
-        printf("Qual a nota da segunda prova? \n");
-        scanf("%d", &aluno[i].nota2);
-        printf("Qual a nota da terceira prova? \n");
-        scanf("%d", &aluno[i].nota3);
-        media[i] = (aluno[i].nota1 + aluno[i].nota2 + aluno[i].nota3)/3;
+        gets(alunos[i].sobrenome);
+        fflush(stdin);
+        printf("Ano de nascimento do aluno %d: ");
+        scanf("%d", &alunos[i].anonascimento);
     }
-        printf("Medias de cada aluno: \n");
-        for(i=1; i<=2; i++){
-            printf("A media do aluno %d eh: %f \n", i ,media[i]);
-        }
+
+    for (i=0; i<qtdaluno; i++){
+        printf("Aluno %d, matricula: %d", alunos[i].matricula);
+        printf("Aluno %d, sobrenome: %c", alunos[i].sobrenome);
+        printf("Aluno %d, ano de nascimento: %d", alunos[i].anonascimento);
+    }
+
 
 return 0;
 }
