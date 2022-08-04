@@ -25,8 +25,6 @@ int main (){
         }
     }
 
-
-    fprintf(caracteres, "%d", x);
     fclose(caracteres);
 
 return 0;
