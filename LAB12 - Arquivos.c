@@ -37,6 +37,8 @@ return 0;
 int main (){
     FILE *caracteres;
     char x;
+    char z;
+    int contador;
     
     caracteres = fopen("caracteres.txt", "r");
     
@@ -46,19 +48,17 @@ int main (){
 
     printf("Digite um caractere para ser lido: ");
     fflush();
-    getc(caracteres);
+    scanf("%c", &x);
     fflush();
     
-    if (feof(caracteres){
-        break;
-    }
-    
-
-    while (1){
-        fgetc(caracteres);
-        
-    
-    }
+    while(1) {
+      c = fgetc(fp);
+      if( feof(fp) ) { 
+         break ;
+      }
+      printf("%c", c);
+   }
+   fclose(fp);
 
 return 0;
 }
