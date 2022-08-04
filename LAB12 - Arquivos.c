@@ -6,7 +6,7 @@
 // Exercicio 1
 int main (){
     FILE *caracteres;
-    int x;
+    char x;
 
     caracteres = fopen("caracteres.txt", "w");
 
@@ -18,8 +18,9 @@ int main (){
 
     for (int i=0; i<10; i++){
         printf("Insira um caractere no arquivo (Ao digitar 0, voce sai): ");
+        scanf("%c", &x);
         fputc(x, caracteres);
-        if (x == 0){
+        if (x == '0'){
             break;
         }
     }
