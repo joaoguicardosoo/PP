@@ -16,7 +16,7 @@ int main (){
     }
 
 
-    for (int i=0; i<10; i++){
+    for (int i=0; i<99; i++){
         printf("Insira um caractere no arquivo (Ao digitar 0, voce sai): ");
         fflush(stdin);
         getc(caracteres);
@@ -38,13 +38,13 @@ int main (){
     FILE *caracteres;
     char x;
     
-    caracteres = fopen("caracteres.txt", "w");
+    caracteres = fopen("caracteres.txt", "r");
     
     if (fopen == NULL){
         printf("Erro ao abrir!");
     }
 
-
+    printf("Digite um caractere para ser lido ")
 
 
 
