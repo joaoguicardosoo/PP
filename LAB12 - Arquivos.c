@@ -44,8 +44,13 @@ int main (){
         printf("Erro ao abrir!");
     }
 
-    printf("Digite um caractere para ser lido ")
-
+    printf("Digite um caractere para ser lido: ");
+    fflush();
+    getc(caracteres);
+    fflush();
+    
+    if 
+    
 
 
 
