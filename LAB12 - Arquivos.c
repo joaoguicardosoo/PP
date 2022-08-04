@@ -49,10 +49,16 @@ int main (){
     getc(caracteres);
     fflush();
     
-    if 
+    if (feof(caracteres){
+        break;
+    }
     
 
-
+    while (1){
+        fgetc(caracteres);
+        
+    
+    }
 
 return 0;
 }
