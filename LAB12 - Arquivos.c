@@ -23,7 +23,7 @@ int main (){
         fflush(stdin);
         fputc(x, caracteres);
         if (x == '0'){
-            exit(1);
+            break;
         }
     }
 
@@ -35,7 +35,14 @@ return 0;
 
 // Exercicio 2
 int main (){
-
+    FILE *caracteres;
+    char x;
+    
+    caracteres = fopen("caracteres.txt", "w");
+    
+    if (fopen == NULL){
+        printf("Erro ao abrir!");
+    }
 
 
 
