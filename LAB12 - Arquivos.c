@@ -8,7 +8,7 @@ int main (){
     FILE *caracteres;
     int x;
 
-    caracteres = fopen ("caracteres.txt", "w");
+    caracteres = fopen("caracteres.txt", "w");
 
     if (fopen == NULL){
         printf("Erro ao abrir!");
@@ -17,7 +17,7 @@ int main (){
 
     while(1){
         printf("Insira um numero no arquivo (Ao digitar 0, voce sai): ");
-        fscaf(caracteres, "%d", &x)
+        fscanf(caracteres, "%d", &x);
         if (x == 0){
             break;
         }
