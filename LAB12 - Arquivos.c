@@ -47,9 +47,9 @@ int main (){
     }
 
     printf("Digite um caractere para ser lido: ");
-    fflush();
+    fflush(stdin);
     scanf("%c", &x);
-    fflush();
+    fflush(stdin);
     
     while(1) {
       c = fgetc(fp);
