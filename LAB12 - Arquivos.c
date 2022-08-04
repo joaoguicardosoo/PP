@@ -17,12 +17,12 @@ int main (){
 
     while(1){
         printf("Insira um numero no arquivo (Ao digitar 0, voce sai): ");
-        scanf("%d", &x);
+        fscaf(caracteres, "%d", &x)
         if (x == 0){
             break;
         }
     }
-
+    fprintf(caracteres, "%d", x);
     fclose(caracteres);
 
 return 0;
