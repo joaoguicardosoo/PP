@@ -15,13 +15,16 @@ int main (){
         exit(1);
     }
 
-    while(1){
-        printf("Insira um numero no arquivo (Ao digitar 0, voce sai): ");
-        fscanf(caracteres, "%d", &x);
+
+    for (int i=0; i<10; i++){
+        printf("Insira um caractere no arquivo (Ao digitar 0, voce sai): ");
+        fputc(x, caracteres);
         if (x == 0){
             break;
         }
     }
+
+
     fprintf(caracteres, "%d", x);
     fclose(caracteres);
 
