@@ -11,4 +11,4 @@ Exercícios da disciplina de Programação Procedimental.
 #### [LAB09 - Funções]
 #### [LAB10 - Ponteiros]
 #### [LAB11 - Memória Dinâmica]
-
+#### [LAB12 - Arquivos]
