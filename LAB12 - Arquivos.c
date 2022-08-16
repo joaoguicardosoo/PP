@@ -65,7 +65,8 @@ return 0;
 
 // Exercicio 3
 int main (){
-
+    FILE *pessoas;
+    char s
 
 
 
