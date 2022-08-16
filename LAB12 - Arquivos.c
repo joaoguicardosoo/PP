@@ -62,3 +62,17 @@ int main (){
 
 return 0;
 }
+
+// Exercicio 3
+int main (){
+
+
+
+
+
+
+
+
+
+    return 0;
+}
