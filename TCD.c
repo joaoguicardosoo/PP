@@ -3,8 +3,21 @@
 #include <math.h>
 #include <strings.h>
 
-int f(int x){
+int f(int x){       // Retorno Funcao Simples
     return x;
+}
+
+double S(int a, int b, int h){      // Calculo da integral
+    int integral;
+    int n, x;
+    n = (b-a)/h;
+    for (i=1; i<n; i++){
+        x = a + i*h;
+        integral = integral + f(x);
+    }
+
+    integral = n/2*(f(a) + 2*integral + f(b));
+    return integral;
 }
 
 int main (){
@@ -13,6 +26,9 @@ int main (){
     int a,b,c,d, n;
     double integral, x;
     int i;
+    int intervalo;
+    double anterior = 0;
+    double atual;
 
     printf("Digite o valor de a da funcao: "); // Leitura dos coeficientes da funcao
     scanf("%d", &a);
@@ -30,14 +46,22 @@ int main (){
     scanf("%d", &h);
 
     
-    n = (b-a)/h;
-    for (i=1; i<n; i++){
-        x = a + i*h;
-        integral = integral + (x*x*x*x);
+    for(i=0; i<1000; i++){
+        h = intervalo;
+        double anterior = 0;
+        double atual;
+
+        atual = S(a, b, h);
+        if((anterior - atual)<(1*(10^-6))){
+            h=h/2;
+            anterior = atual;
+        }
+        else{
+            break;
+        }
     }
-
-    integral = n/2*(f(a) + 2*integral + f(b));
-
+    
+    printf("%lf", atual);
 
 return 0;
 }
