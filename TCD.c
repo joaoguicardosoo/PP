@@ -9,7 +9,7 @@ int f(int x){       // Retorno Funcao Simples
 
 double S(int a, int b, int h){      // Calculo da integral
     int integral;
-    int n, x;
+    int n, x, i;
     n = (b-a)/h;
     for (i=1; i<n; i++){
         x = a + i*h;
@@ -45,7 +45,7 @@ int main (){
     printf("Quantos retangulos dentro da area: ");
     scanf("%d", &h);
 
-    
+
     for(i=0; i<1000; i++){
         h = intervalo;
         double anterior = 0;
@@ -60,7 +60,7 @@ int main (){
             break;
         }
     }
-    
+
     printf("%lf", atual);
 
 return 0;
