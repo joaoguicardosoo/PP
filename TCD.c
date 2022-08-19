@@ -7,25 +7,10 @@ int f(int x){
     return x;
 }
 
-float encontraarea(float x1, float x2, int n)  // Area Total com Qtd Retangulos
-{
-    float area = 0;
-    float x = x1;
-    float dx = (x2 - x1) / n;
-    for (int i = 0; i < h; i++)
-    {
-        area += (x + dx) * (x + dx);
-        x += dx;
-    }
-    return area;
-}
-
-
 int main (){
     float x1, x2, area, areatotal; // Inicial, Final, Area, Area Total
     int h;          // Quantidade de Retangulos
     int a,b,c,d, n;
-    float intervalo;
     double integral, x;
     int i;
 
@@ -53,8 +38,6 @@ int main (){
 
     integral = n/2*(f(a) + 2*integral + f(b));
 
-    areatotal = encontraarea(x1, x2, h);    
-    printf("A area total é: %.2f\n", areatotal);
 
 return 0;
 }
